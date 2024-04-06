@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body, html {
     margin: 0;
@@ -7,16 +7,18 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #6a11cb, #2575fc, #fcfbfd);
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0a0a0a;
+    color: #fff;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(20, 20, 20, 0.8);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     max-width: 600px;
+    text-align: center;
 }
 
 .profile-pic img {
@@ -27,20 +29,18 @@ body, html {
     margin-bottom: 20px;
 }
 
-.title {
-    color: #333;
+h1 {
+    color: #00ffdd;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.subtitle {
-    color: #666;
+.description {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.info {
-    color: #444;
+.faq {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -51,7 +51,7 @@ body, html {
     padding: 15px 30px;
     border: none;
     border-radius: 30px;
-    background-color: #25d366;
+    background-color: #ff0055;
     color: #fff;
     font-size: 1.2rem;
     cursor: pointer;
@@ -59,22 +59,26 @@ body, html {
 }
 
 .whatsapp-btn:hover {
-    background-color: #128c7e;
+    background-color: #ff77a9;
 }
 
-.social-media-icons a {
-    color: #333;
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: #00ffdd;
     font-size: 1.5rem;
     margin: 0 10px;
     transition: transform 0.3s ease;
 }
 
-.social-media-icons a:hover {
+.social-links a:hover {
     transform: scale(1.2);
 }
 
 .footer {
-    color: #666;
+    color: #999;
     font-size: 0.8rem;
-    margin-top: 20px;
 }
