@@ -1,46 +1,21 @@
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-    25% {
-        background-position: 100% 50%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    75% {
-        background-position: 0% 100%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(-45deg, #fdcbf1, #fdcbf1, #e6e6e6);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc, #fcfbfd);
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     max-width: 600px;
 }
 
@@ -52,36 +27,54 @@ html {
     margin-bottom: 20px;
 }
 
-button {
-    margin: 10px 5px;
-    padding: 10px;
+.title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.info {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.whatsapp-btn {
+    margin-bottom: 30px;
+    padding: 15px 30px;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
+    border-radius: 30px;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 1.2rem;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.whatsapp-btn:hover {
+    background-color: #128c7e;
 }
 
-.social-links a {
-    color: #007bff;
-    text-decoration: none;
+.social-media-icons a {
+    color: #333;
+    font-size: 1.5rem;
     margin: 0 10px;
     transition: transform 0.3s ease;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
-    transform: scale(1.1);
+.social-media-icons a:hover {
+    transform: scale(1.2);
 }
 
 .footer {
-    color: #ff66c4;
-    margin-top: 30px;
+    color: #666;
+    font-size: 0.8rem;
+    margin-top: 20px;
 }
